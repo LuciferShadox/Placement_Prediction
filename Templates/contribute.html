@@ -1,0 +1,48 @@
+<html>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <section class="hero is-medium is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Placement Prediction System
+        </h1>
+        <h2 class="subtitle">
+          The all Stop for placements
+        </h2>
+      </div>
+    </div>
+    <div class="navbar">
+        <a class="navbar-item" href="http://localhost:5000">Home</a>
+        <a class="navbar-item is-active" >
+           Contribute
+        </a>
+    </div>
+  </section>
+<body>
+    <center>
+    <form action="http://localhost:5000/thanks" method="post">
+        
+            <label class="label">Enter your Details to Contribute</label>
+                <label class ="label">Name:</label><input type ="text" name="name">
+        
+            
+                <label class ="label">Department:</label>
+                <select name=dropdown>
+                    <option value="CSE" selected>CSE</option>
+                    <option value="MECH" selected>MECH</option>
+                    <option value="EEE" selected>EEE</option>
+                    <option value="ECE" selected>ECE</option>
+                    <option value="PROD" selected>PROD</option>
+                </select>
+                
+                <label class ="label">CGPA:</label><input type ="text" name="cgpa">
+                <label class ="label">Backlogs:</label><input type ="text" name="bl">
+                <label class ="label">Placed(Y/N):</label><input type ="text" name="bl">
+                <br>
+            <input type="submit" name="submit">
+        </form>
+            </center>    
+</body>
+
+  </html>
